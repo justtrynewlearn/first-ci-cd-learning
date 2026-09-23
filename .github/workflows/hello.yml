@@ -4,12 +4,16 @@ on:
   push:
 
 jobs:
-  hello:
+  job-a:
     runs-on: ubuntu-latest
 
     steps:
-      - name: First step
-        run: exit 1
+      - name: Job A step
+        run: echo "Hello from Job A"
 
-      - name: Second step
-        run: echo "Second step"
+  job-b:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Job B step
+        run: echo "Hello from Job B"
