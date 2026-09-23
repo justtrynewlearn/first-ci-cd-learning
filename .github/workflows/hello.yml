@@ -12,6 +12,7 @@ jobs:
         run: echo "Hello from Job A"
 
   job-b:
+    needs: job-a
     runs-on: ubuntu-latest
 
     steps:
