@@ -8,5 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say hello
-        run: exit 1
+      - name: First step
+        run: echo "First step"
+
+      - name: Second step
+        run: echo "Second step"
