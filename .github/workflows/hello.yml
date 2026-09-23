@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Job A step
-        run: echo "Hello from Job A"
+        run: exit 1
 
   job-b:
     needs: job-a
