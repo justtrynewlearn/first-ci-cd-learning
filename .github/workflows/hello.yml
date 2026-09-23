@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: First step
-        run: echo "First step"
+        run: exit 1
 
       - name: Second step
         run: echo "Second step"
